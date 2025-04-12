@@ -1,5 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
 using UserService.Api.DependencyInjection;
+using UserService.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,11 +23,12 @@ builder.Services.AddCors(options =>
 		policyBuilder.WithHeaders("*");
 	});
 } );
+builder.Services.AddDbContext<UserServiceDbContext>(options =>
+	options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 
 if (app.Environment.IsDevelopment())
 {

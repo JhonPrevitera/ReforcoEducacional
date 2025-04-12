@@ -1,25 +1,27 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using UserService.Application.Dtos;
+using UserService.Application.Interfaces;
 
 namespace UserService.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 [Authorize] 
-public class UsersController : ControllerBase
+public class UsersController(ILogger<UsersController> logger, IUserService userAppService) : ControllerBase
 {
-	private readonly ILogger<UsersController> _logger;
-
-	public UsersController(ILogger<UsersController> logger)
-	{
-		_logger = logger;
-	}
-
 	[HttpGet] 
 	public IActionResult Get()
 	{
-		_logger.LogInformation("Chamando...");
+		logger.LogInformation("Chamando...");
 		return Ok();
+	}
+
+	[HttpPost("/create")]
+	public async Task<IActionResult> CreateUser([FromBody] CreateUserDto dto)
+	{
+		var user = await userAppService.CreateUserAsync(dto);
+		return Ok(user.FullName);
 	}
 	
 	

@@ -8,10 +8,21 @@ public class UserServiceDbContext(IConfiguration configuration, DbContextOptions
 	: DbContext(options)
 {
 	protected readonly IConfiguration _configuration = configuration;
-
-	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+	
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
-		optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
+		modelBuilder.Entity<UserBase>()
+			.HasDiscriminator<string>("UserType")
+			.HasValue<Student>("Student")
+			.HasValue<Parent>("Parent")
+			.HasValue<Admin>("Admin");
+
+		modelBuilder.Entity<Parent>()
+			.HasMany(p => p.Children)
+			.WithOne(s => s.Parent)
+			.HasForeignKey(s => s.ParentId);
 	}
-	public DbSet<User> Users { get; set; }
+	
+	
+	public DbSet<UserBase> Users { get; set; }
 }

@@ -12,6 +12,20 @@ services:
     networks:
       - keycloak_network
 
+  postgres-app:
+    image: postgres:16.2
+    container_name: postgres-app
+    environment:
+      POSTGRES_DB: "reforcodb"
+      POSTGRES_USER: "reforcouser"
+      POSTGRES_PASSWORD: "123@pass"
+    ports:
+      - "5433:5432"  
+    volumes:
+      - postgres-app-data:/var/lib/postgresql/data
+    networks:
+      - keycloak_network
+
   keycloak:
     image: quay.io/keycloak/keycloak:23.0.6
     command: start
@@ -37,6 +51,7 @@ services:
       - keycloak_network
 
 volumes:
+  postgres-app-data:
   postgres_data:
     driver: local
 
