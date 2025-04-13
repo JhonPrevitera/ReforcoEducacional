@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LdWV/yZmebg=",
+  "dgSpecHash": "0gLw4wB888k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
+  "projectFilePath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j_may\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\j_may\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.1\\microsoft.aspnetcore.authentication.jwtbearer.8.0.1.nupkg.sha512",

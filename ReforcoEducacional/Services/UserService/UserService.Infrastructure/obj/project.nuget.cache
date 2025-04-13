@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vUlwrpW6zbw=",
+  "dgSpecHash": "SfegDZfA6EY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j_may\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\j_may\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

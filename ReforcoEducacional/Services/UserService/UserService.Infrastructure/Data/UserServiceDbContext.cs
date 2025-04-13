@@ -4,13 +4,13 @@ using UserService.Domain.Entities;
 
 namespace UserService.Infrastructure.Data;
 
-public class UserServiceDbContext(IConfiguration configuration, DbContextOptions<UserServiceDbContext> options)
-	: DbContext(options)
+public class UserServiceDbContext(DbContextOptions<UserServiceDbContext> options) : DbContext(options)
 {
-	protected readonly IConfiguration _configuration = configuration;
 	
+
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
+		modelBuilder.Entity<UserBase>().ToTable("Users");
 		modelBuilder.Entity<UserBase>()
 			.HasDiscriminator<string>("UserType")
 			.HasValue<Student>("Student")
@@ -21,8 +21,5 @@ public class UserServiceDbContext(IConfiguration configuration, DbContextOptions
 			.HasMany(p => p.Children)
 			.WithOne(s => s.Parent)
 			.HasForeignKey(s => s.ParentId);
-	}
-	
-	
-	public DbSet<UserBase> Users { get; set; }
+	}public DbSet<UserBase> Users { get; set; }
 }

@@ -5,13 +5,18 @@ namespace UserService.Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
 {
-	private readonly UserServiceDbContext _context;
-	
-	public async Task<string> CreateUsers(UserBase user)
+	public Task<string> CreateUsers(UserBase user)
 	{
-		await _context.Users.AddAsync(user);
-		await _context.SaveChangesAsync();
-		string userFullName = user.FullName;
-		return $"O usuario {userFullName} foi criado com sucesso!";
+		_context.Users.Add(user); // Exemplo de uso do DbContext
+		_context.SaveChanges();
+		return Task.FromResult(user.FullName);
+	}
+
+
+	private readonly UserServiceDbContext _context;
+
+	public UserRepository(UserServiceDbContext context) 
+	{
+		_context = context ?? throw new ArgumentNullException(nameof(context)); // Verifique se o _context está sendo injetado corretamente
 	}
 }

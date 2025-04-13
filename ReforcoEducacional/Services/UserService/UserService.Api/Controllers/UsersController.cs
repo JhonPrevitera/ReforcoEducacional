@@ -16,13 +16,12 @@ public class UsersController(ILogger<UsersController> logger, IUserService userA
 		logger.LogInformation("Chamando...");
 		return Ok();
 	}
-
-	[HttpPost("/create")]
-	public async Task<IActionResult> CreateUser([FromBody] CreateUserDto dto)
+	
+	
+	[HttpPost("parent/create")]
+	public async Task<IActionResult> CreateParentWithChildren([FromBody] CreateParentRequest dto)
 	{
-		var user = await userAppService.CreateUserAsync(dto);
-		return Ok(user.FullName);
+		var user = await userAppService.CreateParentWithChildrenAsync(dto);
+		return Ok(user);
 	}
-	
-	
 }

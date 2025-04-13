@@ -47,7 +47,7 @@ namespace UserService.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
                     b.HasDiscriminator<string>("UserType").HasValue("UserBase");
 

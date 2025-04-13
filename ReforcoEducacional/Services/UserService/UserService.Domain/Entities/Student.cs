@@ -9,9 +9,6 @@ public class Student : UserBase
 	public Parent Parent { get; private set; }
 
 	// Construtor usado pela aplicação (sem propriedade de navegação)
-	public Student(string fullName, string email, string passwordHash, Guid parentId)
-		: base(fullName, email, passwordHash)
-	{
-		ParentId = parentId;
-	}
+	public Student(string fullName, string email, string passwordHash)
+		: base(fullName, email, passwordHash){}
 }

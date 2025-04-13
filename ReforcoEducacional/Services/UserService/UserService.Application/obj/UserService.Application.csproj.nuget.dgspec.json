@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {}
+    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {
+    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj",
         "projectName": "UserService.Application",
-        "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj",
+        "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj",
         "packagesPath": "C:\\Users\\j_may\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\obj\\",
+        "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\j_may\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj": {
-                "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj"
+              "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj": {
+                "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj": {
+    "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
         "projectName": "UserService.Domain",
-        "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+        "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
         "packagesPath": "C:\\Users\\j_may\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\j_may\\AppData\\Roaming\\NuGet\\NuGet.Config"

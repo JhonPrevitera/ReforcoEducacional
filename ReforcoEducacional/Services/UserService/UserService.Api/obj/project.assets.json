@@ -2948,11 +2948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
       "projectName": "UserService.Api",
-      "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
+      "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\UserService.Api.csproj",
       "packagesPath": "C:\\Users\\j_may\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\obj\\",
+      "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\j_may\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2967,11 +2967,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {
-              "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj"
+            "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj": {
+              "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Application\\UserService.Application.csproj"
             },
-            "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj"
+            "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj"
             }
           }
         }

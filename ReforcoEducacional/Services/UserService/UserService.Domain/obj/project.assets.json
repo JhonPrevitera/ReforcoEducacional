@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
       "projectName": "UserService.Domain",
-      "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+      "projectPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\UserService.Domain.csproj",
       "packagesPath": "C:\\Users\\j_may\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\obj\\",
+      "outputPath": "C:\\Users\\j_may\\OneDrive\\Área de Trabalho\\Projetos Jhon\\ReforcoApp\\ReforcoEducacional\\Services\\UserService\\UserService.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\j_may\\AppData\\Roaming\\NuGet\\NuGet.Config"

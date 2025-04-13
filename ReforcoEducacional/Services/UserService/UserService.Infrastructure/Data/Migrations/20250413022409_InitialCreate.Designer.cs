@@ -12,7 +12,7 @@ using UserService.Infrastructure.Data;
 namespace UserService.Infrastructure.Migrations
 {
     [DbContext(typeof(UserServiceDbContext))]
-    [Migration("20250412033512_InitialCreate")]
+    [Migration("20250413022409_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -50,7 +50,7 @@ namespace UserService.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
                     b.HasDiscriminator<string>("UserType").HasValue("UserBase");
 

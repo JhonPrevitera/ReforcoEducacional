@@ -7,36 +7,25 @@ namespace UserService.Application.Services;
 
 public class UserAppService(IUserRepository userRepository) : IUserService
 {
-	public async Task<UserDto> CreateUserAsync(CreateUserDto dto)
+	
+	
+	public async Task<UserDto> CreateParentWithChildrenAsync(CreateParentRequest dto)
 	{
-		UserBase user = dto.UserType.ToLower() switch
-		{
-			"student" => new Student( dto.FullName,
-				dto.Email,
-				dto.Password,
-				dto.ParentId),
-			"parent" => new Parent
-			(
-				dto.FullName,
-				dto.Email,
-				dto.Password
-			),
-			"admin" => new Admin
-			(
-				dto.FullName,
-				dto.Email,
-				dto.Password,
-				"default"
-			),
-			_ => throw new ArgumentException("Invalid user type")
-		};
+		var parent = new Parent(dto.FullName, dto.Email, dto.Password);
 
-		await userRepository.CreateUsers(user);
+		foreach (var child in dto.Children)
+		{
+			var student = new Student(child.FullName, child.Email, child.Password);
+			parent.AddChild(student);
+		}
+
+		await userRepository.CreateUsers(parent);
 
 		return new UserDto
 		{
-			FullName = user.FullName,
-			Email = user.Email
+			FullName = parent.FullName,
+			Email = parent.Email
 		};
 	}
+
 }

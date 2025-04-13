@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using UserService.Application.Interfaces;
+using UserService.Application.Services;
+using UserService.Domain.Interfaces;
+using UserService.Infrastructure.Repositories;
 
 namespace UserService.Api.DependencyInjection;
 
