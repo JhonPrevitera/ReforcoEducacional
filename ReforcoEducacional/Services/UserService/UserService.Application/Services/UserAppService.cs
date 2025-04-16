@@ -28,4 +28,14 @@ public class UserAppService(IUserRepository userRepository) : IUserService
 		};
 	}
 
+	public async Task<UserDto> CreateStudentAsync(CreateStudentDto dto)
+	{
+		 var student = new Student(dto.FullName, dto.Email, dto.Password);
+		 await userRepository.CreateUsers(student);
+		 return new UserDto
+		 {
+			 FullName = student.FullName,
+			 Email = student.Email
+		 };
+	}
 }

@@ -5,4 +5,5 @@ namespace UserService.Application.Interfaces;
 public interface IUserService
 {
 	Task<UserDto> CreateParentWithChildrenAsync(CreateParentRequest dto);
+	Task<UserDto> CreateStudentAsync (CreateStudentDto dto);
 }

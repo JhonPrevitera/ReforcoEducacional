@@ -9,7 +9,6 @@ public class Parent : UserBase
 	{
 		Children = new List<Student>();
 	}
-
 	public void AddChild(Student child)
 	{
 		Children.Add(child);

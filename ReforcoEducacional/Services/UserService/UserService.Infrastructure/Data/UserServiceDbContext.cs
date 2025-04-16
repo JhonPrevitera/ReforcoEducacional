@@ -6,7 +6,6 @@ namespace UserService.Infrastructure.Data;
 
 public class UserServiceDbContext(DbContextOptions<UserServiceDbContext> options) : DbContext(options)
 {
-	
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{

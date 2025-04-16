@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Application.Dtos;
@@ -22,6 +23,13 @@ public class UsersController(ILogger<UsersController> logger, IUserService userA
 	public async Task<IActionResult> CreateParentWithChildren([FromBody] CreateParentRequest dto)
 	{
 		var user = await userAppService.CreateParentWithChildrenAsync(dto);
+		return Ok(user);
+	}
+
+	[HttpPost("student/create")]
+	public async Task<IActionResult> CreateStudentAsync([FromBody] CreateStudentDto dto)
+	{
+		var user = await userAppService.CreateStudentAsync(dto);
 		return Ok(user);
 	}
 }
